@@ -1,0 +1,102 @@
+/* Accordion Gallery */
+div.last-mainContainer{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--lighter-gray);
+	height: auto;	
+	margin-top: 0;
+	padding: 3em;
+}
+div.last-mainContainer img{
+	width: 100%;
+	height: 30%;
+    border-style: solid;
+	border-width: 6px;
+    border-color: var(--medium-gray);
+	margin-left: 2em;
+	position: left;
+	margin-bottom: 2em;
+}
+div.last-mainContainer p{
+	margin: 0 5em 2em 3em;
+	color: var(--medium-gray);
+}
+div.topBorderBox{
+	background-color: var(--bright);
+}
+div.window{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+}
+div.last-mainContainer nav.window-title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 25px 18px 25px;
+	padding-left: 2em;
+	font-weight: 700;
+}
+.accordion {
+	border-radius: 5px;
+	margin: 0 30px 0;
+}
+.accordion .accordion-item{
+	border-bottom: 1px solid;
+	border-bottom-color: var(--bright);
+}
+.accordion .accordion-item .title{
+	font-size: 15px;
+}
+.accordion .accordion-item:last-of-type {
+	border-bottom: none;
+}
+.accordion .accordion-item:first-child .title {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.accordion .accordion-item:last-child .title {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.accordion .accordion-item .title {
+	background-color: var(--medium-gray);
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	font-weight: 700;
+}
+.accordion  .title:after {
+	content: '\2193';
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+}
+.accordion .accordion-item .panel {
+	max-height: 0;
+	-webkit-transition: max-height 0.15s ease-out;
+	-o-transition: max-height 0.15s ease-out;
+	transition: max-height 0.15s ease-out;
+	overflow: hidden;
+}
+.accordion .accordion-item.active .title {
+	background-color: var(--half-dark);
+}
+.accordion .accordion-item.active .title:after {
+	content: '\2191';
+}
+.accordion .accordion-item.active .panel {
+	max-height: 500px;
+	-webkit-transition: max-height 0.25s ease-in;
+	-o-transition: max-height 0.25s ease-in;
+	transition: max-height 0.25s ease-in;
+}

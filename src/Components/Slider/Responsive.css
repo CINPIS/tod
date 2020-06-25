@@ -1,0 +1,22 @@
+@media only screen and (max-width: 770px){
+	div.slider-container-top div.titulo-header h1{
+		color: var(--bright);
+	}
+	div.slider-container-top div.titulo-header p {
+		color: var(--bright);
+		font-size: 12px;
+		width: 100%;
+	}
+	div.slider-container-top img {
+		margin-top: 12em;
+	}
+}
+@media only screen and (max-width: 546px){
+	div.slider-container-top div.titulo-header h1{
+		color: var(--bright);
+		font-size: 18px;
+	}
+	div.slider-container-top img {
+		margin-top: 10em;
+	}
+}

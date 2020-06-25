@@ -1,0 +1,14 @@
+/* The end of Form - Footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 80px;
+    background-color: var(--half-dark);
+    font-size: 8px;
+}
+.footer a{
+    color: var(--bright);
+    font-weight: bold;
+}
+
